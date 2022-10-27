@@ -8,7 +8,7 @@ function App() {
   let iconStyles = { color: "red", fontSize: "1.5em" };
   return (
     <div className="App py-20">
-      <AiOutlineMore className="ali" />
+      <AiOutlineMore />
       <header className="App-header flex flex-col justify-center items-center">
         <img
           src={ProfileImg}
@@ -20,7 +20,7 @@ function App() {
           Juadeb Gabriel
         </h1>
       </header>
-      <main className="py-[1.8rem] lg:px-[9rem] sm:px-[1rem] ">
+      <main className="py-[1.8rem] lg:px-[9rem] sm:px-[1rem] md:px[1rem] xs:px-[1rem]">
         <div className=" bg-[#EAECF0] text-center py-4 hover:bg-[#c5c7ca]">
           <a href="https://twitter.com/Juadeb1" id="twitter">
             Twitter
@@ -50,7 +50,7 @@ function App() {
           <BsGithub style={iconStyles} />
         </div>
       </main>
-      <footer className="flex items-center justify-between px-20 py-5">
+      <footer className="flex items-center justify-between gap-3 px-20 py-5 sm:flex-col lg:flex-row">
         <div id="footer_logo" className="flex">
           <span className=" font-bold text-2xl">Zuri</span>
           <div>
@@ -59,7 +59,7 @@ function App() {
           <span className=" font-bold text-2xl">Internship</span>
         </div>
         <div>
-          <span className=" text-[#667085]">
+          <span className=" text-[#667085] sm:text-center">
             HNG Internship 9 Frontend Task
           </span>
         </div>
